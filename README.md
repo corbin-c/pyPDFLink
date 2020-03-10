@@ -18,19 +18,20 @@ pip install pymupdf
 
 Only hyperlinks are supported. Links must be described in a text file,
 structured as TSV: First column is the "clickable box" rectangle definition,
-as `x0,y0,x1,y1`, second column is the destination URI.
+as `x0,y0,x1,y1`, second column is the destination URI, third is the page.
 
 ### Example:
 
 ```
-27,293,104,307	tel:+43245676432
-27,312,160,327	mailto:first.last@gmail.com
-216,573,326,587	https://coolwebsite.com/
+27,293,104,307	tel:+43245676432 	1
+27,312,160,327	mailto:first.last@gmail.com	1
+216,573,326,587	https://coolwebsite.com/	3
 ```
 
 ## Why this tool?
 
 When using Firefox to generate a PDF from a web page, it comes without
 hyperlinks. This tool can be used to add the links where they should be. To
-avoid manually describing the box & uri for each hyperlink to activate, a
-JS bookmarklet is provided (see file `bkmlt.js`).
+avoid manually describing the box & uri for each hyperlink to activate, a JS
+bookmarklet is provided (see file `bkmlt.js`; currently only supports 1-page
+files).

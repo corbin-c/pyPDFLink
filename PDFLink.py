@@ -1,6 +1,6 @@
 import fitz
 import sys
-if (len(sys.argv) != 4):
+if (len(sys.argv) != 5):
   print("Usage: python "+sys.argv[0]+" source.pdf links_dump output.pdf")
 else:
   doc = fitz.open(sys.argv[1])
@@ -8,6 +8,6 @@ else:
   for l in linksToAdd:
     if (l != ""):
       l = l.split("\t")
-      doc.loadPage(0).insertLink({"kind": 2, "from": fitz.Rect(*list(map(int,l[0].split(",")))), "uri": l[1]})
+      doc.loadPage(l[2]).insertLink({"kind": 2, "from": fitz.Rect(*list(map(int,l[0].split(",")))), "uri": l[1]})
   doc.save(sys.argv[3])
   doc.close();

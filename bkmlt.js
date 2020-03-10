@@ -15,7 +15,7 @@ javascript:
     values = values.map((e,i) => {
       return Math.round(pxToPDF(e-bodyOffset[i%2]))
     });
-    return values.join(",")+"\t"+href
+    return values.join(",")+"\t"+href+"\t0"
   });
   alert(links.join("\n"));
 })(parseInt(prompt("Width ? (mm)")))

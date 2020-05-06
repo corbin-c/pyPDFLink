@@ -23,7 +23,7 @@ as `x0,y0,x1,y1`, second column is the destination URI, third is the page.
 ### Example:
 
 ```
-27,293,104,307	tel:+43245676432 	1
+27,293,104,307	tel:+43245676432	0
 27,312,160,327	mailto:first.last@gmail.com	1
 216,573,326,587	https://coolwebsite.com/	3
 ```

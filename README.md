@@ -1,6 +1,6 @@
 # pyPDFLink
 
-Python utility to add links to a PDF. Just a small script using [PyMuPDF]()https://pymupdf.readthedocs.io/).
+Python utility to add links to a PDF. Just a small script using [PyMuPDF](https://pymupdf.readthedocs.io/).
 
 ## Installation
 
